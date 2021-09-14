@@ -40,7 +40,9 @@ p{
 
 }
 
-
+#NewPost{
+    border: 2px solid black; border-radius: 3px;padding: 1px;
+}
 .box1 ul li a img{
     width: 20px;
     height: 20px;
@@ -98,7 +100,7 @@ display: none !important;
     display: none;
 }
 }
-
+                                        /* endof navbar */
 .container1{
     position: relative;
     display: flex;
