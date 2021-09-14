@@ -1,0 +1,100 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font:inherit;
+    transition:0.2s all ease-in-out;
+    }
+    input,a,div,textarea,p{
+        outline: none;
+    }
+                                            /*start navbar */
+    .container1{
+    
+        display: flex;
+        flex-direction: row;
+        /* width:80% ; */
+        /* background-color: red; */
+        /* height: 100px; */
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        border-bottom: 1px solid rgba(var(--b6a,219,219,219),1)
+    }
+    
+     
+    .heading {
+        margin: 22px auto 12px;
+        background-image: url("https://www.instagram.com/static/bundles/es6/sprite_core_b20f2a3cd7e4.png/b20f2a3cd7e4.png");
+        background-position: -98px 0;
+        height: 51px;
+        width: 177px;
+        overflow: hidden;
+      }
+    .box1 >ul li{
+        list-style: none;
+        display: inline;
+    
+    }
+    #NewPost{
+        border: 2px solid black; border-radius: 3px;padding: 1px;
+    }
+    
+    
+    .box1 ul li a img{
+        width: 20px;
+        height: 20px;
+        margin: 0 10px; 
+    }
+    .box1 ul li img:hover{
+        transform:rotate(360deg);
+    
+    transition: 0.3S;
+    
+    }
+    .box1 ul li a  .profile:hover{
+        transform:rotateY(360deg);
+        transition: 0.3S;
+    }
+    .line{
+        width: 100%;
+        margin-top: 5px;
+        height: 2px;
+    
+    }
+    input,
+    button
+    {
+        border-radius: 2px;
+        font-size: 12px !important;
+        border: 1px solid #dbdbdb;
+        background-color: #fafafa;
+        padding: 7px 10px;
+        /* margin: 5px 0; */
+        width: 130%;
+        text-align: center;
+        outline: none;
+    }
+    .nav-link{
+        display: inline !important;
+        margin-left:-15px ;
+    }
+    .profile{
+        border-radius: 50%;
+    }
+    .dropdown-toggle::after {
+    display: none !important;
+    }
+    
+    @media (max-width: 1000px)  {
+        .container1{
+            flex-direction: row !important;
+        }
+    }
+    @media (max-width: 768px)  
+    {
+    #search{
+        display: none;
+    }
+    }
+    
+                                            /*end navbar */

@@ -52,6 +52,9 @@ transition: 0.3S;
     transform:rotateY(360deg);
     transition: 0.3S;
 }
+#NewPost{
+    border: 2px solid black; border-radius: 3px;padding: 1px;
+}
 .line{
     width: 100%;
     margin-top: 5px;

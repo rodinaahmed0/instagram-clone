@@ -91,7 +91,7 @@
           </div>
         </div>
         <div class="container1">
-          <form action="Home.html" method="POST" action="{{ route('register') }}">
+          <form  method="POST" action="{{ route('register') }}">
             @csrf  
             <div style="width: 100%; ">
               <input type="text"id="name" name="name" class="form-control @error('name') is-invalid @enderror"  required autocomplete="name" autofocus placeholder="Full Name">
@@ -132,6 +132,9 @@
               @enderror 
           </div>
 
+          <div style="width: 100%; ">
+            <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password" placeholder="Confirm Password">
+        </div>
             <button type="submit" >Sign up</button>
           </form>
           
