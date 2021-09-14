@@ -52,7 +52,6 @@
                             {{ __('Forgot Your Password?') }}
                         </a>
                     @endif
-                        <a class="forgot-password" href="#">Forgot password?</a>
                       </div>
                     </form>
               </div>

@@ -135,9 +135,6 @@
             <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password" placeholder="Confirm Password">
         </div>
 
-          <div style="width: 100%; ">
-            <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password" placeholder="Confirm Password">
-        </div>
             <button type="submit" >Sign up</button>
           </form>
           
