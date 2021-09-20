@@ -7,24 +7,29 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
+    protected $fillable = [
+        'image',
+        'caption',
+        'user_id'
+    ];
     use HasFactory;
 
     public function user () {
-       return $this->belongsTo('App\User');  
+       return $this->belongsTo(User::class);
     }
     public function tags () {
-        return $this->belongsToMany('App\Tag');
-    } 
+        return $this->belongsToMany(Tag::class);
+    }
 
     // for saves we will not use it
     public function users() {
-        return $this->belongsToMany('App\User' , 'saves');
+        return $this->belongsToMany(User::class, 'saves');
     }
     public function users_like_it() {
-        return $this->belongsToMany('App\User' , 'likes');
+        return $this->belongsToMany(User::class, 'likes');
     }
     public function comments() {
-        return $this->belongsToMany('App\User' , 'comments');
+        return $this->hasMany(Comment::class);
     }
 
 }

@@ -30,7 +30,7 @@ p{
     border-bottom: 1px solid rgba(var(--b6a,219,219,219),1)
 }
 
- 
+
 .heading {
     margin: 22px auto 12px;
     background-image: url("https://www.instagram.com/static/bundles/es6/sprite_core_b20f2a3cd7e4.png/b20f2a3cd7e4.png");
@@ -49,7 +49,7 @@ p{
 .box1 ul li a img{
     width: 20px;
     height: 20px;
-    margin: 0 10px; 
+    margin: 0 10px;
 }
 .box1 ul li img:hover{
     transform:rotate(360deg);
@@ -100,7 +100,7 @@ display: none !important;
         flex-direction: row !important;
     }
 }
-@media (max-width: 768px)  
+@media (max-width: 768px)
 {
 #search{
     display: none;
@@ -117,7 +117,7 @@ display: none !important;
     justify-content: center;
     flex-direction: row;
     margin: auto;
-    
+
 }
 .line{
     width: 70%;
@@ -152,7 +152,7 @@ display: none !important;
     width: 150px;
     height:150px;
     border-radius: 50%;
-    
+
 
 }
 .contanier-username{
@@ -188,7 +188,7 @@ display: none !important;
     height: 20px;
     /* margin-top: 50px; */
 
-    margin-top: 20px ; 
+    margin-top: 20px ;
 }
 .setting ul li img:hover{
     transform:rotate(360deg);
@@ -221,8 +221,8 @@ transition: 0.3S;
             height:100px;
             border-radius: 50%;
             margin-right: 20px;
-            
-        
+
+
         }
         #username {
 
@@ -265,7 +265,7 @@ transition: 0.3S;
     justify-content: space-between;
     align-items: flex-start;
     width: 75%;
-    margin: 10px auto; 
+    margin: 10px auto;
 }
 
 .bio{
@@ -284,15 +284,15 @@ transition: 0.3S;
        margin: 10px auto;
        flex-wrap: wrap;
        align-items: center;
-       
+
 }
 .first-box{
     /* background-color: black; */
-width:31%;
+width:32%;
 height: 293px;
 margin: 10px auto;
 /* overflow: hidden; */
-position: relative;
+/* position: relative; */
 
 }
 
@@ -301,6 +301,7 @@ position: relative;
     height: 100%;
     align-self: center;
     margin: 10px 0 ;
+    overflow: hidden;
 
 }
 
@@ -316,7 +317,7 @@ transition: 1s;
     .contanier-posts{
         width: 100%;
 
-       
+
 }
 
 .first-box{
@@ -339,9 +340,9 @@ width:32%;
         /* height: 293px; */
         /* margin: 10px auto; */
         /* overflow: hidden; */
-        
+
         }
-       
+
 }
 #myTab{
     display: flex;

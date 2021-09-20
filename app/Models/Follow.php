@@ -5,10 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Tag extends Model
+class Follow extends Model
 {
     use HasFactory;
-    public function posts() {
-        return $this->belongsToMany(Post::class);
-    }
+    protected $fillable = [
+        'user_id',
+        'follow_id',
+    ];
 }

@@ -25,7 +25,7 @@ p{
     border-bottom: 1px solid rgba(var(--b6a,219,219,219),1)
 }
 
- 
+
 .heading {
     margin: 22px auto 12px;
     background-image: url("https://www.instagram.com/static/bundles/es6/sprite_core_b20f2a3cd7e4.png/b20f2a3cd7e4.png");
@@ -46,7 +46,7 @@ p{
 .box1 ul li a img{
     width: 20px;
     height: 20px;
-    margin: 0 10px; 
+    margin: 0 10px;
 }
 .box1 ul li img:hover{
     transform:rotate(360deg);
@@ -94,7 +94,7 @@ display: none !important;
         flex-direction: row !important;
     }
 }
-@media (max-width: 768px)  
+@media (max-width: 768px)
 {
 #search{
     display: none;
@@ -106,33 +106,55 @@ display: none !important;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: 70vh;
 }
-
+#photo-show
+{
+    height: 50vh;
+    /* max-width:20rem ; */
+}
+.card{
+    width: 800px ;
+    height: 50vh;
+}
 .row {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
-    
+    justify-content: space-between;
+
 }
 
 .card-body{
     display: flex;
     flex-direction: column;
-    height: 53.5vh;
+    height: 50vh;
     justify-content: space-between;
     /* width: 19rem;     */
+    padding: 0.5rem 0.5rem!important;
 }
 #username{
     width: 25px;
     height: 25px;
     border-radius: 50%;
     text-decoration: none;
+    /* margin-top: 10px; */
 }
 .card-title{
     text-decoration: none;
     color:rgb(38, 38, 38);
+    font-size: 0.9rem !important;
+    /* opacity: 1 !important; */
+}
+#username-id span{
+    font-size: 1rem !important;
+    padding-top:10px ;
+    font-weight: bold;
+}
+#username-comment{
+    opacity: 0.7     !important;
+    font: 0.84rem sans-serif;
 }
 .par-box2{
     display: flex;
@@ -146,10 +168,7 @@ display: none !important;
     list-style: none;
 
     }
-    .box2 ul li a{
-        position: relative;
-        top: -10px;
-    }
+
     #navbarDropdown{
         font-size: 1.5rem !important;
     color:rgb(38, 38, 38);
@@ -160,9 +179,10 @@ display: none !important;
         flex-direction: column;
     }
 
+
     .comment-wrapper{
 
-        
+
         width: 100%;
         height: 45px;
 
@@ -171,7 +191,7 @@ display: none !important;
         justify-content: space-between;
         align-items: flex-start;
     }
-    
+
     .comment-wrapper .icon{
     /* padding-right: 5px; */
     height: 31px;
@@ -179,19 +199,20 @@ display: none !important;
     margin-left: 3px;
     margin-top: 5px;
 }
-    
-    
-    .comment-box{
-        width: 80%; 
-        height: 100%;
-        border: none;
-        outline: none;
-        font-size: 14px;
-        background-color: white;
-        text-align: start;
-        
-    }
-    
+
+
+.comment-box{
+    width: 75%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background-color: white;
+    text-align: start;
+
+
+}
+
     .comment-btn{
         width: 70px;
         height: 100%;
@@ -207,9 +228,18 @@ display: none !important;
         color: rgb(0, 162, 255);
         opacity: 1;
     }
-    @media (max-width: 768px)  
+    @media (max-width: 768px)
     {
-    .container1{
-        top: 150px;
+
+
+    .card{
+        width: 85%;
     }
+    #photo-show
+{
+    /* max-height: 50vh; */
+    width:100% ;
+    /* margin: auto; */
+    margin-bottom: 20px;
+}
     }

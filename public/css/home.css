@@ -21,7 +21,7 @@ input,a,div,textarea,p{
     border-bottom: 1px solid rgba(var(--b6a,219,219,219),1)
 }
 
- 
+
 .heading {
     margin: 22px auto 12px;
     background-image: url("https://www.instagram.com/static/bundles/es6/sprite_core_b20f2a3cd7e4.png/b20f2a3cd7e4.png");
@@ -40,7 +40,7 @@ input,a,div,textarea,p{
 .box1 ul li a img{
     width: 20px;
     height: 20px;
-    margin: 0 10px; 
+    margin: 0 10px;
 }
 .box1 ul li img:hover{
     transform:rotate(360deg);
@@ -90,7 +90,7 @@ display: none !important;
         flex-direction: row !important;
     }
 }
-@media (max-width: 768px)  
+@media (max-width: 768px)
 {
 #search{
     display: none;
@@ -154,7 +154,7 @@ border-bottom: none;
 
 }
 
-@media (max-width: 768px)  
+@media (max-width: 768px)
 {
     .card{
         width: 400px;
@@ -208,18 +208,19 @@ border-bottom: none;
     height: 43px;
     width: 23px;
     margin-left: 7px;
-    
+
 }
 
 .comment-box{
-    width: 80%;
+    width: 84%;
     height: 100%;
     border: none;
     outline: none;
-    font-size: 14px;
+    font-size: 15px;
     background-color: white;
     text-align: start;
-    
+    margin-top: 6px;
+
 }
 
 .comment-btn{
@@ -236,4 +237,8 @@ border-bottom: none;
 .comment-btn:hover{
     color: rgb(0, 162, 255);
     opacity: 1;
+}
+
+.card-body {
+    width:100%
 }

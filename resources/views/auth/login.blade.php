@@ -16,25 +16,26 @@
       <div class="box1">
               <div class="box">
                 <div class="heading"></div>
-                    <form class="login-form" method="POST" action="{{ route('login') }}">
+                    <form class="login-form" method="POST" action="{{route('login')}}">
+                        @csrf
                       <div class="field">
                         <input id="email" type="email" name="email" placeholder="Phone number, username, or email" required
                         autocomplete="email"
                         autofocus>
-                         @error('email')
+                        <!-- @error('email')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
-                        @enderror 
+                        @enderror' -->
                       </div>
                       <div class="field">
                         <input id="password" name="password" type="password" placeholder="password" required autocomplete="current-password"/>
-                      
-                        @error('password')
+
+                        <!-- @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
-                                @enderror 
+                                @enderror -->
                       </div>
                       <button class="login-button" type="submit" title="login">Log In</button>
                       <div class="separator">
@@ -47,18 +48,19 @@
                           <i class="fa fa-facebook-official fb-icon"></i>
                           <span class="">Log in with Facebook</span>
                         </button>
-                        @if (Route::has('password.request'))
+                        <!-- @if (Route::has('password.request'))
                         <a class="forgot-password" href="{{ route('password.request') }}">
                             {{ __('Forgot Your Password?') }}
                         </a>
-                    @endif
+                    @endif -->
+                        <a class="forgot-password" href="#">Forgot password?</a>
                       </div>
                     </form>
               </div>
           <div class="box" id="lastlogin">
-            @if (Route::has('register'))
-            <p>Don't have an account? <a class="signup" href="{{ route('register') }}">Sign Up</a></p>
-            @endif
+            <!-- @if (Route::has('register')) -->
+            <p>Don't have an account? <a class="signup" href="{{route('register')}}">Sign Up</a></p>
+            <!-- @endif -->
           </div>
       </div>
   </div>
@@ -79,8 +81,6 @@
         </ul>
         <p>© 2021 Instagram</p>
       </div>
-
-
 
 
 @endsection
